@@ -1,0 +1,129 @@
+.back-link {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  cursor: pointer;
+  padding: 0;
+  margin-bottom: 1.25rem;
+  display: block;
+  transition: color 0.15s;
+}
+
+.back-link:hover { color: var(--text-primary); }
+
+.loan-detail-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.75rem;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.detail-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.stat-detail-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.stat-detail-label {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.stat-detail-value {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.accent-value { color: var(--accent); }
+.success-value { color: var(--success); }
+
+.section-sub-title {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 1rem;
+}
+
+.interest-breakdown {
+  display: flex;
+  flex-direction: column;
+}
+
+.interest-row {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.interest-label {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-bottom: 0.25rem;
+}
+
+.interest-value {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.payment-history {
+  margin-bottom: 2rem;
+}
+
+.payment-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.payment-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.7rem 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.88rem;
+}
+
+.payment-row:last-child { border-bottom: none; }
+
+.payment-date { color: var(--text-muted); }
+
+.payment-amount {
+  color: var(--success);
+  font-weight: 500;
+}
+
+.progress-fill {
+  transition: width 0.4s ease;
+}
+
+.progress-fill-active { background: var(--accent); }
+.progress-fill-completed { background: var(--success); }
+.progress-fill-overdue { background: var(--danger); }
+
+@media (max-width: 768px) {
+  .loan-detail-header {
+    margin-top: 3rem;
+  }
+
+  .interest-row {
+    gap: 1rem;
+  }
+}
